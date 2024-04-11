@@ -45,6 +45,7 @@ export default function Home() {
           <div className="flex items-center mt-1 flex-wrap">
             {artists.map((artist) => (
               <Link
+                key={artist.name}
                 href={artist.url}
                 className="hover:bg-neutral-800 transition p-4 rounded-lg group"
               >
@@ -77,6 +78,7 @@ export default function Home() {
           <div className="flex items-center">
             {albums.map((album) => (
               <Link
+                key={album.name}
                 href={album.url}
                 className="hover:bg-neutral-800 transition p-4 rounded-lg group"
               >
@@ -108,6 +110,7 @@ export default function Home() {
           <div className="flex items-center">
             {radios.map((radio) => (
               <Link
+                key={radio.name}
                 href={radio.url}
                 className="hover:bg-neutral-800 transition p-4 rounded-lg group"
               >

@@ -81,15 +81,15 @@ export default function Sidebar() {
         </div>
         <div className="bg-neutral-800 p-3 rounded-lg">
           <h2 className="font-bold mb-2">Create you first playlist</h2>
-          <p className="text-xs font-medium">It's easy we will help you</p>
+          <p className="text-xs font-medium">It&apos;s easy we will help you</p>
           <button className="bg-white px-4 py-2 rounded-2xl text-black font-bold text-xs mt-4 hover:scale-105 transition">
             Create playlist
           </button>
         </div>
         <div className="bg-neutral-800 p-3 rounded-lg">
-          <h2 className="font-bold mb-2">Let's find some podcasts to follow</h2>
+          <h2 className="font-bold mb-2">Let&apos;s find some podcasts to follow</h2>
           <p className="text-xs font-medium">
-            We'll keep you updated on new episodes
+            We&apos;ll keep you updated on new episodes
           </p>
           <button className="bg-white px-4 py-2 rounded-2xl text-black font-bold text-xs mt-4 hover:scale-105 transition">
             Browse podcasts
@@ -99,7 +99,7 @@ export default function Sidebar() {
         <div className="font-medium px-6 mt-10">
           <div className="flex flex-wrap gap-3 mb-2">
             {links.map((link) => (
-              <Link href={link.url} className="text-neutral-400 text-[10px]">
+              <Link key={link.name} href={link.url} className="text-neutral-400 text-[10px]">
                 {link.name}
               </Link>
             ))}
